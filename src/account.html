@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./account.css">
+
+  <title>Добро пожаловать!</title>
+
+</head>
+
+<body>
+
+  <div className="page">
+
+    <header className="header">
+      <img className="logo" src="./images/logo.svg" alt="Логотип"/>
+      <div className="header__container_profile">
+        <a className="header__link" href="#">Фильмы</a>
+        <a className="header__link" href="#">Сохраненные фильмы</a>
+      </div>
+      <button className="header__button">Аккаунт</button>
+    </header>
+
+    <main className="profile">
+      <form className="authorization-form">
+        <div>
+          <h2 className="form__title_profile">Привет, Ананас!</h2>
+          <div className="form__items">
+            <div>
+              <div className="input__container_profile">
+                <label className="label_profile" for="user-name">Имя</label>
+                <input className="input_profile" value="Ананас"/>
+              </div>
+              <span className="error"></span>
+            </div>
+            <div>
+              <div className="input__container_profile input__container_profile_border">
+                <label className="label_profile" for="user-email">E-mail</label>
+                <input className="input_profile" value="pineapple@gmail.com"/>
+              </div>
+              <span className="error"></span>
+            </div>
+
+          </div>
+        </div>
+        <div className="form__button-container">
+          <span className="form__error"></span>
+          <button className="form__button_profile" type="submit" disabled>
+            Редактировать
+          </button>
+          <button className="form__button_profile form__button_profile_color_pink" type="submit" disabled>
+            Выйти из аккаунта
+          </button>
+        </div>
+      </form>
+    </main>
+
+  </div>
+
+</body>
+
+</html>
