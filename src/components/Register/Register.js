@@ -1,10 +1,11 @@
 import "./Register.css";
+import logo from '../../images/logo.svg';
 
 function Register() {
     return (
 
         <section className="authorization-box">
-            <img className="logo__picture" src="./images/logo.svg" alt="Логотип" />
+            <img className="logo__picture" src={logo} alt="Логотип" />
                 <form className="authorization-box__form">
                     <div>
                         <h2 className="form__title">
@@ -35,7 +36,7 @@ function Register() {
                         </div>
                     </div>
                     <div className="form__button-container">
-                        <button className="form__button" type="submit" disabled>
+                    <button className="form__button" type="submit" href="/signup">
                             Зарегистрироваться
                         </button>
                     </div>

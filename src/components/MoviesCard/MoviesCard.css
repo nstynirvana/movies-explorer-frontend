@@ -1,0 +1,45 @@
+.movie {
+    background-color: #222222;
+    border-radius: 6px;
+}
+
+.movie__cover {
+    width: 270px;
+    height: 151px;
+    object-fit: cover;
+}
+
+.movie__container {
+    margin: 14px 12px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.movie__title {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    margin: 0;
+    max-width: 206px;
+}
+
+.movie__button {
+    background-color: #313131;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+}
+
+.movie__button_active {
+    background-color: #2BE080;
+}
+
+.movie__duration {
+    color: #8B8B8B;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    margin: 0 0 14px 12px;
+}

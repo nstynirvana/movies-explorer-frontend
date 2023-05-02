@@ -7,6 +7,8 @@ function MoviesCardList() {
         <section className="movie-list">
             <div className="movie-list__case">
                 <MoviesCard />
+                <MoviesCard />
+                <MoviesCard />
             </div>
             <button className="movie-list__button">Ещё</button>
         </section>
@@ -14,4 +16,4 @@ function MoviesCardList() {
     )
 }
 
-export default MoviesCardList
+export default MoviesCardList;

@@ -1,11 +1,12 @@
-import Header from "../Header/Header";
+import Navigation from "../Navigation/Navigation"; 
 import "./Profile.css";
 
 function Profile() {
     return (
 
         <>
-            <Header />
+
+            <Navigation />
 
             <section className="profile">
                 <form className="authorization-form">
@@ -40,6 +41,7 @@ function Profile() {
                     </div>
                 </form>
             </section>
+            
         </>
 
     )

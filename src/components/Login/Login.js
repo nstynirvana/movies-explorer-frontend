@@ -28,7 +28,7 @@ function Login() {
                         </div>
                     </div>
                     <div className="form__button-container">
-                        <button className="form__button" type="submit" disabled>
+                    <button className="form__button" type="submit" href="/profile">
                             Войти
                         </button>
                     </div>

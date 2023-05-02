@@ -1,4 +1,5 @@
 import "./SearchForm.css";
+import searchButton from '../../images/search-button.svg';
 
 function SearchForm() {
     return (
@@ -8,7 +9,7 @@ function SearchForm() {
                 <form className="search-box__form">
                     <input className="search-box__input" type="text" placeholder="Фильм" value=""/>
                         <button className="search-box__button">
-                            <img src="./images/search-button.svg" alt="Поиск"/>
+                        <img src={searchButton} alt="Поиск"/>
                         </button>
                 </form>
             </div>

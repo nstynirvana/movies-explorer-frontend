@@ -1,13 +1,14 @@
 import MoviesCardList from "../MoviesCardList/MoviesCardList";
 import SearchForm from "../SearchForm/SearchForm";
-import Header from "../Header/Header";
+import Navigation from "../Navigation/Navigation";
 import Footer from "../Footer/Footer";
 import "./Movies.css";
 
 function Movies() {
     return (
         <>
-            <Header />
+
+            <Navigation />
 
             <section className="movies">
 
@@ -18,6 +19,7 @@ function Movies() {
             </section>
 
             <Footer />
+
         </>
 
     )
