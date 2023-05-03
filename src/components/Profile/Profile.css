@@ -6,13 +6,12 @@
 .authorization-form {
     width: 456px;
     box-sizing: border-box;
-    padding: 92px 30px 70px;
+    padding: 92px 20px 70px;
     margin: 0 auto;
 }
 
 .form__title_profile {
     margin: 0 auto 123px;
-    font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
@@ -57,15 +56,6 @@
     text-align: end;
 }
 
-.error {
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 12px;
-    color: #EE3465;
-    min-height: 12px;
-    margin: 0 0 5px;
-}
-
 .label_profile:first-child {
     margin-top: 0;
 }
@@ -74,24 +64,11 @@
     margin-top: 114px;
 }
 
-.form__error {
-    display: block;
-    margin: 0 auto 20px;
-    min-height: 14px;
-    text-align: center;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 13px;
-    color: #FF004C;
-}
-
 .form__button_profile {
     width: 100%;
-    min-width: 260px;
     padding: 14px 0;
-    color: #fff;
+    color: #FFFFFF;
     border: none;
-    border-radius: 3px;
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
@@ -101,4 +78,46 @@
 .form__button_profile_color_pink {
     font-weight: 500;
     color: #EE3465;
+}
+
+@media (max-width: 768px) {
+
+    .profile {
+        max-width: 768px;
+    }
+
+    .authorization-form {
+        width: 456px;
+        padding: 236px 20px 70px;
+    }
+
+    .form__title_profile {
+        margin: 0 auto 96px;
+    }
+
+    .form__button-container {
+        margin-top: 210px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .profile {
+        max-width: 768px;
+    }
+
+    .authorization-form {
+        width: 260px;
+        padding: 70px 0 40px;
+    }
+
+    .form__title_profile {
+        margin: 0 auto 80px;
+    }
+
+    .form__button-container {
+        margin-top: 379px;
+    }
+
 }

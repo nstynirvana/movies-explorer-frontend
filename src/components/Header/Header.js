@@ -7,7 +7,7 @@ function Header() {
     return (
 
         <section className="header">
-            <a className="header" href="./">
+            <a className="header__logo" href="/">
                 <img className="logo" src={logo} alt="Логотип" />
             </a>
             <div className="header__container">

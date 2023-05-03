@@ -15,23 +15,20 @@ function Profile() {
                         <div className="form__items">
                             <div>
                                 <div className="input__container_profile">
-                                    <label className="label_profile" for="user-name">Имя</label>
+                                    <label className="label_profile">Имя</label>
                                     <input className="input_profile" value="Ананас" />
                                 </div>
-                                <span className="error"></span>
                             </div>
                             <div>
                                 <div className="input__container_profile input__container_profile_border">
-                                    <label className="label_profile" for="user-email">E-mail</label>
+                                    <label className="label_profile">E-mail</label>
                                     <input className="input_profile" value="pineapple@gmail.com" />
                                 </div>
-                                <span className="error"></span>
                             </div>
 
                         </div>
                     </div>
                     <div className="form__button-container">
-                        <span className="form__error"></span>
                         <button className="form__button_profile" type="submit" disabled>
                             Редактировать
                         </button>

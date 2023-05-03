@@ -19,6 +19,7 @@ function Techs() {
                 <li className="techniques__item">Express.js</li>
                 <li className="techniques__item">mongoDB</li>
             </ul>
+
         </section>
 
     )
