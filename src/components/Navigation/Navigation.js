@@ -1,20 +1,18 @@
 import { Link } from "react-router-dom";
-import logo from '../../images/logo.svg';
 import "./Navigation.css";
 
 function Navigation() {
     return (
 
-        <header className="header">
-            <img className="logo" src={logo} alt="Логотип" />
-            <div className="header__container_profile">
-                <Link className="header__link" to="/movies">Фильмы</Link>
-                <Link className="header__link" to="/saved-movies">Сохраненные фильмы</Link>
+        <header className="navigation">
+            <div className="navigation__container">
+                <Link className="navigation__link" to="/movies">Фильмы</Link>
+                <Link className="navigation__link" to="/saved-movies">Сохраненные фильмы</Link>
             </div>
-            <button className="header__button">Аккаунт</button>
+            <button className="navigation__button">Аккаунт</button>
         </header>
         
     )
 }
 
-export default Navigation
+export default Navigation;

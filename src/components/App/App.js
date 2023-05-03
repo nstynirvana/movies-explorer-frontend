@@ -6,10 +6,22 @@ import Profile from '../Profile/Profile';
 import Register from '../Register/Register';
 import Login from '../Login/Login';
 import PageNotFound from '../PageNotFound/PageNotFound';
+import BurgerMenu from '../BurgerMenu/BurgerMenu';
 import './App.css';
 import { Route, Routes } from "react-router-dom";
 
 function App() {
+
+    const [isBurgerPopupOpen, setIsBurgerPopupOpen] = React.useState(false);
+
+    function handleBurgerPopupClick() {
+        setIsBurgerPopupOpen(true)
+    }
+
+    function closePopup() {
+        setIsBurgerPopupOpen(false)
+    }
+
     return (
 
         <div className="page">
@@ -27,7 +39,9 @@ function App() {
 
                 <Route
                     path="/saved-movies"
-                    element={<SavedMovies />}>
+                    element={
+                        <SavedMovies onBurgerPopup={handleBurgerPopupClick}/>
+                    }>
                 </Route>
 
                 <Route
@@ -50,6 +64,8 @@ function App() {
                     element={<PageNotFound />}>
                 </Route>
             </Routes >
+
+            <BurgerMenu isOpen={isBurgerPopupOpen} onClose={closePopup} />
 
         </div>
     );
