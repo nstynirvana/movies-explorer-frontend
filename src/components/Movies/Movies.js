@@ -1,28 +1,23 @@
-import MoviesCardList from "../MoviesCardList/MoviesCardList";
-import SearchForm from "../SearchForm/SearchForm";
-import Navigation from "../Navigation/Navigation";
-import Footer from "../Footer/Footer";
-import "./Movies.css";
+import MoviesCardList from '../MoviesCardList/MoviesCardList';
+import SearchForm from '../SearchForm/SearchForm';
+import Navigation from '../Navigation/Navigation';
+import Footer from '../Footer/Footer';
+import './Movies.css';
 
 function Movies() {
-    return (
-        <>
+  return (
+    <>
+      <Navigation />
 
-            <Navigation />
+      <section className="movies">
+        <SearchForm />
 
-            <section className="movies">
+        <MoviesCardList />
+      </section>
 
-                <SearchForm />
-
-                <MoviesCardList />
-
-            </section>
-
-            <Footer />
-
-        </>
-
-    )
+      <Footer />
+    </>
+  );
 }
 
 export default Movies;

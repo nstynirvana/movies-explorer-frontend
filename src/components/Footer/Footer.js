@@ -2,27 +2,31 @@ import './Footer.css';
 
 function Footer() {
   return (
-    
-      <section className="footer">
-        <p className="footer__text">Учебный проект Яндекс.Практикум х BeatFilm.</p>
-        <div className="footer__container">
-          <div className="footer__parts">
+    <section className="footer">
+      <p className="footer__text">
+        Учебный проект Яндекс.Практикум х BeatFilm.
+      </p>
+      <div className="footer__container">
+        <div className="footer__parts">
           <p className="footer__copyright">© {new Date().getFullYear()}</p>
         </div>
         <nav>
           <ul className="footer__list">
             <li>
-              <a className="footer__item" href="https://practicum.yandex.ru">Яндекс.Практикум</a>
+              <a className="footer__item" rel="noreferrer" target="_blank" href="https://practicum.yandex.ru">
+                Яндекс.Практикум
+              </a>
             </li>
             <li>
-              <a className="footer__item" href="https://github.com/nstynirvana">Github</a>
+              <a className="footer__item" rel="noreferrer" target="_blank" href="https://github.com/nstynirvana">
+                Github
+              </a>
             </li>
           </ul>
         </nav>
-        </div>
-      </section>
-         
+      </div>
+    </section>
   );
 }
 
-export default Footer; 
+export default Footer;

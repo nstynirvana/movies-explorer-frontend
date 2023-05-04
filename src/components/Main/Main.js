@@ -7,31 +7,24 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import './Main.css';
 
-
 function Main() {
-    return (
+  return (
+    <>
+      <Header />
 
-        <>
-            <Header />
+      <div className="content">
+        <Promo />
 
-            <div className="content">
+        <AboutProject />
 
-                <Promo />
+        <Techs />
 
-                <AboutProject />
+        <AboutMe />
+      </div>
 
-                <Techs />
-
-                <AboutMe />
-
-            </div>
-
-            <Footer />
-            
-        </>
-
-
-    );
+      <Footer />
+    </>
+  );
 }
 
-export default Main; 
+export default Main;
