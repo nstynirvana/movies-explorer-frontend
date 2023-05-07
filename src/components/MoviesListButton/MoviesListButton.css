@@ -1,0 +1,29 @@
+.movie-list__button {
+    color: #FFFFFF;
+    background-color: #2F2F2F;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    border: none;
+    width: 320px;
+    border-radius: 6px;
+    margin: 0 auto;
+    padding: 11px 60px 9px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    
+    .movie-list__button {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    
+    .movie-list__button {
+        margin-bottom: 80px;
+        width: 240px;
+    }
+}

@@ -5,8 +5,6 @@ function Navigation() {
   return (
     <header className="navigation">
       <div className="navigation__container">
-        if (max-width:768px)
-        {
           <>
             <Link className="navigation__link" to="/">
               Главная
@@ -18,18 +16,6 @@ function Navigation() {
               Сохраненные фильмы
             </Link>
           </>
-        }
-        else
-        {
-          <>
-            <Link className="navigation__link" to="/movies">
-              Фильмы
-            </Link>
-            <Link className="navigation__link" to="/saved-movies">
-              Сохраненные фильмы
-            </Link>
-          </>
-        }
       </div>
       <button
         aria-label="Возвращение в аккаунт"

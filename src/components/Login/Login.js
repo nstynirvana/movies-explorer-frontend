@@ -1,13 +1,13 @@
 import logo from '../../images/logo.svg';
 import './Login.css';
 
-function Login() {
+function Login(props) {
   return (
     <section className="authorization-box">
       <a href="/">
         <img className="logo__picture" src={logo} alt="Логотип" />
       </a>
-      <form className="authorization-box__form">
+      <form handleLogin={props.handleLogin} className="authorization-box__form">
         <div>
           <h2 className="form__title">Рады видеть!</h2>
           <div className="form__items">

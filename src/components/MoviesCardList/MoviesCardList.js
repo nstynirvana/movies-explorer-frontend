@@ -9,18 +9,6 @@ function MoviesCardList() {
         <MoviesCard />
         <MoviesCard />
       </div>
-      if (/movies)
-      {
-        <button
-          aria-label="Добавление фильмов"
-          value="add"
-          type="button"
-          className="movie-list__button"
-        >
-          Ещё
-        </button>
-      }
-      else {''}
     </section>
   );
 }

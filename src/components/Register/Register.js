@@ -1,13 +1,13 @@
 import './Register.css';
 import logo from '../../images/logo.svg';
 
-function Register() {
+function Register(props) {
   return (
     <section className="authorization-box">
       <a href="/">
         <img className="logo__picture" src={logo} alt="Логотип" />
       </a>
-      <form className="authorization-box__form">
+      <form handleRegister={props.handleRegister} className="authorization-box__form">
         <div>
           <h2 className="form__title">Добро пожаловать!</h2>
           <div className="form__items">

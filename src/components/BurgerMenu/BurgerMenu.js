@@ -1,34 +1,39 @@
 import React from 'react';
-import Navigation from '../Navigation/Navigation';
 import closeButton from '../../images/close-button.svg';
+import burgerButton from '../../images/burger-button.svg';
 import './BurgerMenu.css';
+import Navigation from '../Navigation/Navigation';
 
 function BurgerMenu(props) {
-  React.useEffect(() => {}, [props.isOpen]);
 
   return (
-    <div isOpen={props.isOpen} onClose={props.onClose}>
+    
+    <button
+      aria-label="Открытие бургер-меню"
+      value="openburger"
+      type="button"
+      className="burger-button"
+      src={burgerButton}
+    >
+      <img src={burgerButton} alt="Кнопка для вызова бургер-меню" />
       <section
-        className={`burger-menu ${
-          props.isOpen ? 'burger-menu-popup_opened' : ''
-        }`}
+        className="burger-menu" onClick={props.onBurgerPopup ? props.onClose : props.isOpen}
       >
         <div className="burger-menu__container">
           <button
             aria-label="Закрытие бургер-меню"
             value="close"
             type="button"
-            onClick={props.onClose}
             className="burger-menu__close-button"
           >
             <img src={closeButton} alt="Кнопка закрытия попапа" />
           </button>
           <div className="burger-menu__list">
-            <Navigation />
           </div>
         </div>
+        <Navigation />
       </section>
-    </div>
+    </button>
   );
 }
 

@@ -1,1 +1,13 @@
-# movies-explorer-frontend
+# Фронтенд дипломного проекта
+
+## Технологии, которые использовались при создании проекта
+
+* файловая структура БЭМ
+* Flexbox и Grid верстка
+
+## Домен, по которому можно обратиться к серверу
+
+https://movies.savinova.nomoredomains.monster
+
+[Макет, по которому верстался диплом](https://disk.yandex.ru/client/disk/%D0%94%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC)
+

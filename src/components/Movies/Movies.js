@@ -1,18 +1,24 @@
 import MoviesCardList from '../MoviesCardList/MoviesCardList';
 import SearchForm from '../SearchForm/SearchForm';
-import Navigation from '../Navigation/Navigation';
+import Header from '../Header/Header';
+import MoviesListButton from '../MoviesListButton/MoviesListButton';
 import Footer from '../Footer/Footer';
 import './Movies.css';
 
-function Movies() {
+function Movies(props) {
   return (
     <>
-      <Navigation />
-
+      <Header
+        isOpen={props.isOpen}
+        onClose={props.onClose}
+        onBurgerPopup={props.onBurgerPopup}
+      />
       <section className="movies">
         <SearchForm />
 
         <MoviesCardList />
+
+        <MoviesListButton />
       </section>
 
       <Footer />
