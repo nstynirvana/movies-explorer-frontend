@@ -7,11 +7,12 @@ import Register from '../Register/Register';
 import Login from '../Login/Login';
 import PageNotFound from '../PageNotFound/PageNotFound';
 import './App.css';
-import { Route, Routes, useNavigate  } from 'react-router-dom';
+import { Route, Routes, useNavigate } from 'react-router-dom';
 
 function App() {
   const [isBurgerPopupOpen, setIsBurgerPopupOpen] = React.useState(false);
   const [isLoggedIn, setIsLoggedIn] = React.useState(false);
+  const [toggle, setToggle] = React.useState(true);
   const navigate = useNavigate();
 
   function handleBurgerPopupClick() {
@@ -30,11 +31,15 @@ function App() {
     setIsLoggedIn(true);
   }
 
-  function signOutProfile(){
+  function signOutProfile() {
     setIsLoggedIn(false);
-    navigate("/");
+    navigate('/');
   }
-  
+
+  const handleClick = () => {
+    setToggle(!toggle);
+  };
+
   return (
     <div className="page">
       <Routes>
@@ -54,6 +59,7 @@ function App() {
           path="/movies"
           element={
             <Movies
+              handleClick={handleClick}
               isLoggedIn={isLoggedIn}
               onBurgerPopup={handleBurgerPopupClick}
               isOpen={isBurgerPopupOpen}
@@ -66,6 +72,7 @@ function App() {
           path="/saved-movies"
           element={
             <SavedMovies
+              handleClick={handleClick}
               isLoggedIn={isLoggedIn}
               onBurgerPopup={handleBurgerPopupClick}
               isOpen={isBurgerPopupOpen}
@@ -87,9 +94,15 @@ function App() {
           }
         ></Route>
 
-        <Route path="/signup" element={<Register handleRegister={handleRegister}/>}></Route>
+        <Route
+          path="/signup"
+          element={<Register handleRegister={handleRegister} />}
+        ></Route>
 
-        <Route path="/signin" element={<Login handleLogin={handleLogin}/>}></Route>
+        <Route
+          path="/signin"
+          element={<Login handleLogin={handleLogin} />}
+        ></Route>
 
         <Route path="*" element={<PageNotFound />}></Route>
       </Routes>
