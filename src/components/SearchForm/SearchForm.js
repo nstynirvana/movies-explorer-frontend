@@ -13,6 +13,7 @@ function SearchForm() {
             className="search-box__input"
             placeholder="Фильм"
             value=""
+            required
           />
           <button
             aria-label="Поиск фильма"
@@ -32,6 +33,7 @@ function SearchForm() {
               id="checkbox"
               name="checkbox"
               className="switch__input"
+              required
             />
             <span className="switch__slider"></span>
           </label>

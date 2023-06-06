@@ -20,6 +20,7 @@ function Profile() {
                     name="name"
                     className="input_profile"
                     value="Ананас"
+                    required
                   />
                 </div>
               </div>
@@ -32,6 +33,7 @@ function Profile() {
                     name="email"
                     className="input_profile"
                     value="pineapple@gmail.com"
+                    required
                   />
                 </div>
               </div>

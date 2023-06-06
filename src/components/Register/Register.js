@@ -14,14 +14,14 @@ function Register(props) {
             <div className="input__container">
               <label className="label" for="user-name">
                 Имя
-                <input type="text" id="name" name="name" className="input" />
+                <input type="text" id="name" name="name" className="input" required/>
               </label>
               <span className="error"></span>
             </div>
             <div className="input__container">
               <label className="label" for="user-email">
                 E-mail
-                <input id="email" type="email" name="email" className="input" />
+                <input id="email" type="email" name="email" className="input" required/>
               </label>
               <span className="error"></span>
             </div>
@@ -33,6 +33,7 @@ function Register(props) {
                   type="password"
                   name="password"
                   className="input"
+                  required
                 />
               </label>
               <span className="error"></span>
