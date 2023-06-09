@@ -15,7 +15,13 @@ function Portfolio() {
           >
             Статичный сайт
           </a>
-          <img className="list__icon" src={ListIcon} alt="Иконка для ссылки" />
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href="https://github.com/nstynirvana/how-to-learn">
+            <img className="list__icon" src={ListIcon} alt="Иконка для ссылки" />
+          </a>
+          
         </li>
         <li className="portfolio__item">
           <a
@@ -26,7 +32,12 @@ function Portfolio() {
           >
             Адаптивный сайт
           </a>
-          <img className="list__icon" src={ListIcon} alt="Иконка для ссылки" />
+          <a
+           rel="noreferrer"
+           target="_blank"
+           href="https://nstynirvana.github.io/russian-travel/">
+             <img className="list__icon" src={ListIcon} alt="Иконка для ссылки" />
+          </a>
         </li>
         <li className="portfolio__item">
           <a
@@ -37,7 +48,12 @@ function Portfolio() {
           >
             Одностраничное приложение
           </a>
-          <img className="list__icon" src={ListIcon} alt="Иконка для ссылки" />
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href="https://github.com/nstynirvana/react-mesto-api-full-gha">
+            <img className="list__icon" src={ListIcon} alt="Иконка для ссылки" />
+          </a>
         </li>
       </ul>
     </section>

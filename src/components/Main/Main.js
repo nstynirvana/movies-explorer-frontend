@@ -12,7 +12,7 @@ function Main() {
     <>
       <Header />
 
-      <div className="content">
+      <main className="content">
         <Promo />
 
         <AboutProject />
@@ -20,7 +20,7 @@ function Main() {
         <Techs />
 
         <AboutMe />
-      </div>
+      </main>
 
       <Footer />
     </>
