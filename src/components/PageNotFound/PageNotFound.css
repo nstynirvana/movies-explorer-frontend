@@ -30,6 +30,11 @@
   font-size: 14px;
   line-height: 17px;
   text-decoration: none;
+  opacity: 1;
+}
+
+.page-not-found__button:hover {
+  opacity: 0.6;
 }
 
 @media (max-width: 768px) {

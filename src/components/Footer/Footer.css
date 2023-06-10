@@ -48,6 +48,11 @@
   line-height: 16px;
   color: #FFFFFF;
   text-decoration: none;
+  opacity: 1;
+}
+
+.footer__item:hover {
+  opacity: 0.6;
 }
 
 @media (max-width: 768px) {

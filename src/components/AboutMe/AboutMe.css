@@ -59,8 +59,12 @@
     line-height: 17px;
     text-decoration: none;
     margin: 99px 0 0 0;
+    opacity: 1;
 }
 
+.student__link:hover {
+    opacity: 0.6;
+}
 .student__photo {
     width: 270px;
     height: 327px;

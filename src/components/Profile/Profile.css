@@ -73,6 +73,11 @@
     font-size: 13px;
     line-height: 16px;
     background-color: inherit;
+    opacity: 1;
+}
+
+.form__button_profile:hover {
+    opacity: 0.6;
 }
 
 .form__button_profile_color_pink {

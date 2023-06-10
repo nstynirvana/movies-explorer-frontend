@@ -11,6 +11,11 @@
     padding: 11px 60px 9px;
     display: flex;
     justify-content: center;
+    opacity: 1;
+}
+
+.movie-list__button:hover {
+    opacity: 0.6;
 }
 
 @media (max-width: 768px) {

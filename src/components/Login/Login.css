@@ -7,6 +7,11 @@
 
 .logo__picture {
     margin-bottom: 40px;
+    opacity: 1;
+}
+
+.logo__picture:hover {
+    opacity: 0.6;
 }
 
 .authorization-box__form {
@@ -91,6 +96,11 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
+    opacity: 1;
+}
+
+.form__button:hover {
+    opacity: 0.6;
 }
 
 .authorization-form__information {
@@ -113,6 +123,11 @@
     font-size: 14px;
     line-height: 17px;
     color: #3456F3;
+    opacity: 1;
+}
+
+.authorization-form__link:hover {
+    opacity: 0.6;
 }
 
 @media (max-width: 400px) {
