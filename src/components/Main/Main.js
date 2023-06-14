@@ -7,10 +7,10 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import './Main.css';
 
-function Main() {
+function Main(props) {
   return (
     <>
-      <Header />
+      <Header isLoggedIn={false} />
 
       <main className="content">
         <Promo />

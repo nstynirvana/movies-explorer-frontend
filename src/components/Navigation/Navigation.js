@@ -6,9 +6,9 @@ function Navigation() {
     <header className="navigation">
       <div className="navigation__container">
           <>
-            <Link className="navigation__link" to="/">
+            {/* <Link className="navigation__link" to="/">
               Главная
-            </Link>
+            </Link> */}
             <Link className="navigation__link" to="/movies">
               Фильмы
             </Link>

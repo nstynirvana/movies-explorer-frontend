@@ -1,10 +1,10 @@
-import Navigation from '../Navigation/Navigation';
+import Header from '../Header/Header';
 import './Profile.css';
 
 function Profile() {
   return (
     <>
-      <Navigation />
+      <Header isLoggedIn={true}/>
 
       <section className="profile">
         <form className="authorization-form">

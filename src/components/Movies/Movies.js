@@ -8,11 +8,7 @@ import './Movies.css';
 function Movies(props) {
   return (
     <>
-      <Header
-        isOpen={props.isOpen}
-        onClose={props.onClose}
-        onBurgerPopup={props.onBurgerPopup}
-      />
+      <Header isLoggedIn={true}/>
       <section className="movies">
         <SearchForm />
 
