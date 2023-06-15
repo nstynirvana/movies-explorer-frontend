@@ -12,13 +12,17 @@
   overflow-x: scroll;
 }
 
-.burger-button {
+.hamburger-react {
+  color: #ffffff;
+}
+
+/* .burger-button {
   opacity: 1;
 }
 
 .burger-button:hover {
   opacity: 0.6;
-}
+} */
 
 .burger-menu_opened {
   visibility: visible;

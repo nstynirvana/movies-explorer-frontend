@@ -10,14 +10,10 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
+
   return (
-    <div className="page">
       <Routes>
-        <Route
-          path="/"
-          element={<Main/>}
-          
-        ></Route>
+        <Route path="/" element={<Main />}></Route>
 
         <Route path="/movies" element={<Movies />}></Route>
 
@@ -30,8 +26,8 @@ function App() {
         <Route path="/signin" element={<Login />}></Route>
 
         <Route path="*" element={<PageNotFound />}></Route>
+
       </Routes>
-    </div>
   );
 }
 
