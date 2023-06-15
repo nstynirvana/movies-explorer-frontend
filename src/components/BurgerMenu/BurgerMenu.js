@@ -1,5 +1,6 @@
 import React from "react";
-import { Twirl as Hamburger } from "hamburger-react";
+import closeButton from '../../images/close-button.svg';
+import burgerButton from '../../images/burger-button.svg';
 import { Link } from "react-router-dom";
 import "./BurgerMenu.css";
 
@@ -18,7 +19,7 @@ function BurgerMenu() {
       className="burger-button"
       onClick={handleButton}
     >
-      <Hamburger />
+      <img src={burgerButton} alt="Кнопка для вызова бургер-меню" />
           <div className={`burger-menu ${isOpen ? "burger-menu_opened" : ""}`}>
           <div className="burger-menu__container">
             <button
@@ -27,7 +28,7 @@ function BurgerMenu() {
               type="button"
               className="burger-menu__close-button"
             >
-              <Hamburger />
+              <img src={closeButton} alt="Кнопка закрытия попапа" />
             </button>
             <div className="burger-menu__list"></div>
           </div>
