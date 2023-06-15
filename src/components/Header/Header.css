@@ -138,3 +138,21 @@
     padding: 5px 12px;
   }
 }
+
+@media (max-width: 400px) {
+  .header-nav {
+    align-items: flex-end;
+  }  
+
+  .header-nav__container {
+    gap: 24px;
+    margin-bottom: 444px;
+    width: 300px;
+    padding-right: 10px;
+  }
+
+  .header-nav__button {
+    margin-right: 110px;
+    margin-bottom: 46px;
+  }
+}
