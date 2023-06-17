@@ -75,6 +75,7 @@
   border-radius: 34px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  z-index: 0;
 }
 
 .switch__slider:before {

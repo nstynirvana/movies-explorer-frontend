@@ -34,7 +34,6 @@ function BurgerMenu() {
           </div>
           <header className="header-nav">
       <div className="header-nav__container">
-          <>
             <Link className="header-nav__link" to="/">
               Главная
             </Link>
@@ -44,7 +43,6 @@ function BurgerMenu() {
             <Link className="header-nav__link" to="/saved-movies">
               Сохраненные фильмы
             </Link>
-          </>
       </div>
       <button
         aria-label="Возвращение в аккаунт"

@@ -41,7 +41,7 @@ function Header(props) {
   }
 
   return (
-    <section className="header">
+    <header className="header">
       <a className="header__logo" href="/">
         <img className="logo" src={logo} alt="Логотип" />
       </a>
@@ -57,7 +57,7 @@ function Header(props) {
           </Link>
         </div>
       )}
-    </section>
+    </header>
   );
 }
 

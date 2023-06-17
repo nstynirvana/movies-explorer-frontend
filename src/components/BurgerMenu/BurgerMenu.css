@@ -1,6 +1,7 @@
 .burger-menu {
   background-color: #202020;
   min-width: 520px;
+  max-height: 780px;
   position: fixed;
   visibility: hidden;
   opacity: 0;
@@ -9,7 +10,8 @@
   bottom: 0;
   right: 0;
   height: 100%;
-  overflow-x: scroll;
+  overflow: auto;
+  z-index: 1;
 }
 
 .hamburger-react {
