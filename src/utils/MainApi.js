@@ -1,4 +1,4 @@
-class Api {
+class MainApi {
     constructor(setting) {
         this._url = setting.url;
         this._headers = setting.headers;
@@ -64,57 +64,18 @@ class Api {
             .then(this._checkResponse)
     }
 
-    //   Получаем все сохраненные фильмы пользователя
-    getMovies() {
-        return fetch(`${this._url}/movies`, {
-            method: 'GET',
-            headers: this._getHeaders(),
-    })
-            .then(this._checkResponse)
-    }
-
-    // Добавляем новый фильм
-    addNewMovie(country,
-        director,
-        duration,
-        year,
-        description,
-        image,
-        trailerLink,
-        thumbnail,
-        movieId,
-        nameRU,
-        nameEN,) {
-        return fetch(`${this._url}/movies`, {
-            method: 'POST',
-            headers: this._getHeaders(),
-            body: JSON.stringify({country,
-                director,
-                duration,
-                year,
-                description,
-                image,
-                trailerLink,
-                thumbnail,
-                movieId,
-                nameRU,
-                nameEN,})
-        })
-            .then(this._checkResponse)
-    }
-
-    //Удаляем фильм
-    deleteMovie(movieId) {
-        return fetch(`${this._url}/movies/${movieId}`, {
-            method: "DELETE",
-            headers: this._getHeaders(),
+    //проверка токена
+    getContent(token) {
+        return fetch(`${this._url}/users/me`, {
+            method: "GET",
+            headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` }
         })
             .then(this._checkResponse)
     }
 }
 
-const api = new Api({
-    url: 'https://api.movies.savinova.nomoredomains.monster',
+const api = new MainApi({
+    url: "http://localhost:3000"
 });
 
 export default api;

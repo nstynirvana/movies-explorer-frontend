@@ -1,20 +1,53 @@
-import logo from '../../images/logo.svg';
-import './Login.css';
+import React from "react";
+import { CurrentUserContext } from "../../contexts/CurrentUserContext";
+import logo from "../../images/logo.svg";
+import "./Login.css";
 
 function Login(props) {
+  const [email, setEmail] = React.useState("");
+  const [password, setPassword] = React.useState("");
+  const currentUser = React.useContext(CurrentUserContext);
+
+  const handleUserEmail = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleUserPassword = (e) => {
+    setPassword(e.target.value);
+  };
+
+  React.useEffect(() => {
+    if (currentUser) {
+      setEmail(currentUser.email);
+      setPassword(currentUser.password);
+    }
+  }, [currentUser, props.isOpen]);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    props.onLogin(email, password);
+  };
   return (
     <section className="authorization-box">
       <a href="/">
         <img className="logo__picture" src={logo} alt="Логотип" />
       </a>
-      <form handleLogin={props.handleLogin} className="authorization-box__form">
+      <form onSubmit={handleSubmit} className="authorization-box__form">
         <div>
           <h2 className="form__title">Рады видеть!</h2>
           <div className="form__items">
             <div className="input__container">
               <label className="label">
                 E-mail
-                <input id="email" type="email" name="email" className="input" required/>
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  className="input"
+                  required
+                  value={email || ""}
+                  onChange={handleUserEmail}
+                />
               </label>
               <span className="error"></span>
             </div>
@@ -27,6 +60,8 @@ function Login(props) {
                   name="password"
                   className="input"
                   required
+                  value={password || ""}
+                  onChange={handleUserPassword}
                 />
               </label>
               <span className="error"></span>
