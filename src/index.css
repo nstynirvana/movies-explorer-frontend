@@ -1,0 +1,9 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts/fonts.css);
+
+.page {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  background-color: #202020;
+}
+

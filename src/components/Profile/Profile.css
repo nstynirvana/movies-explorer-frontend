@@ -1,0 +1,128 @@
+.profile {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.authorization-form {
+    width: 456px;
+    box-sizing: border-box;
+    padding: 92px 20px 70px;
+    margin: 0 auto;
+}
+
+.form__title_profile {
+    margin: 0 auto 123px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.form__items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input__container_profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #424242;
+}
+
+.input__container_profile_border {
+    border-bottom: none;
+}
+
+.label_profile {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+.input_profile {
+    max-width: 100%;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 14px;
+    background-color: #202020;
+    color: #FFFFFF;
+    border: none;
+    margin: 0;
+    text-align: end;
+}
+
+.label_profile:first-child {
+    margin-top: 0;
+}
+
+.form__button-container {
+    margin-top: 114px;
+}
+
+.form__button_profile {
+    width: 100%;
+    padding: 14px 0;
+    color: #FFFFFF;
+    border: none;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    background-color: inherit;
+    opacity: 1;
+}
+
+.form__button_profile:hover {
+    opacity: 0.6;
+}
+
+.form__button_profile_color_pink {
+    font-weight: 500;
+    color: #EE3465;
+}
+
+@media (max-width: 768px) {
+
+    .profile {
+        max-width: 768px;
+    }
+
+    .authorization-form {
+        width: 456px;
+        padding: 236px 20px 70px;
+    }
+
+    .form__title_profile {
+        margin: 0 auto 96px;
+    }
+
+    .form__button-container {
+        margin-top: 210px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .profile {
+        max-width: 768px;
+    }
+
+    .authorization-form {
+        width: 260px;
+        padding: 70px 0 40px;
+    }
+
+    .form__title_profile {
+        margin: 0 auto 80px;
+    }
+
+    .form__button-container {
+        margin-top: 379px;
+    }
+
+}
