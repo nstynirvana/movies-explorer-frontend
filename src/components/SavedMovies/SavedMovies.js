@@ -4,10 +4,10 @@ import SearchForm from '../SearchForm/SearchForm';
 import Header from '../Header/Header';
 import './SavedMovies.css';
 
-function SavedMovies() {
+function SavedMovies(props) {
   return (
     <>
-      <Header isLoggedIn={true}/>
+      <Header isLoggedIn={props.isLoggedIn}/>
 
       <section className="movies">
         <SearchForm />

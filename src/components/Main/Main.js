@@ -10,7 +10,7 @@ import './Main.css';
 function Main(props) {
   return (
     <>
-      <Header isLoggedIn={false} />
+      <Header isLoggedIn={props.isLoggedIn} />
 
       <main className="content">
         <Promo />

@@ -23,15 +23,15 @@ function Register(props) {
 
   React.useEffect(() => {
     if (currentUser) {
+      setName(currentUser.name);
       setEmail(currentUser.email);
       setPassword(currentUser.password);
-      setName(currentUser.name);
     }
   }, [currentUser, props.isOpen]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.onRegister(email, password, name);
+    props.onRegister(name, email, password);
   };
 
   return (
@@ -67,7 +67,7 @@ function Register(props) {
                   name="email"
                   className="input"
                   required
-                  value={email}
+                  value={email || ""}
                   onChange={handleUserEmail}
                 />
               </label>

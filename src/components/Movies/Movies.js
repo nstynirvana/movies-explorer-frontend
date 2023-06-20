@@ -8,7 +8,7 @@ import './Movies.css';
 function Movies(props) {
   return (
     <>
-      <Header isLoggedIn={true}/>
+      <Header isLoggedIn={props.isLoggedIn}/>
       <section className="movies">
         <SearchForm />
 
